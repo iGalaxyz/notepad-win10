@@ -1,0 +1,115 @@
+#notepad {
+	height: 320px;
+	width: 640px;
+	background-color: white; 
+	border:1px solid #1883D7;
+	margin: 50px 0 0 50px;
+}
+
+#logo {
+	margin: 6px 8px 0px 8px;
+}
+
+
+#title {
+	font-size: 12px;
+	font-family: "Microsoft YaHei";
+	margin: -16px 0 0 29px;
+}
+
+body {
+	background-color: #272822;
+	font-size: 0;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	-webkit-user-select: none;
+	cursor: default;
+}
+
+.left-button-bar {
+	float: left;
+}
+
+.right-button-bar {
+	float: right;
+	margin: -22px 0 0 499px;
+}
+
+#icon {
+	display: inline-block;
+	background-color: #FFF;
+	-webkit-app-region: drag;
+}
+
+#icon .inact {
+	background-color: #f8f8f8;
+}
+
+#icon .button {
+	-webkit-app-region: no-drag;
+	opacity: .8;
+	padding-bottom: -1px;
+	border-left:2px solid #FFF;
+	-webkit-transition-duration:0.2s;
+}
+
+#icon .inactbutton {
+	-webkit-app-region: no-drag;
+	opacity: 1.0;
+	padding-bottom: 2px;
+}
+
+#icon .button:hover,#icon .button:focus {
+	opacity: 1.0;
+	background-color: #e5e5e5;
+}
+
+#icon #close-button:hover,#icon #close-button:focus {
+	opacity: 1.0;
+	background-color: #E81123;
+}
+
+#icon .button:active {
+	opacity: 1.0;
+	background-color: #cacacb;
+}
+
+#icon .hiddenbutton {
+	display: none;
+	-webkit-app-region: drag;
+}
+
+#info {
+	border: 1px solid #0078D7;
+	font-size: 12pt;
+	overflow:scroll;
+}
+
+#info:focus {
+	outline: none;
+	border: 1px solid #0078D7;
+	
+}
+
+#menu {
+	margin: 16px 0px -2px 0px;
+}
+
+#menu .menu-list {
+	width: 50px;
+	height: 17px;
+	display: inline-block;
+	border: 1px solid #FFF;
+	text-align: center;
+	font-size: 11px;
+	color: #000;
+	font-family: "Microsoft YaHei";
+	margin: -8px 0px 3px 0px;
+}
+#menu .menu-list:hover{
+
+	background-color: #E5F3FF;
+	border:1px solid #CCE8FF;
+
+}

@@ -96,11 +96,16 @@ body {
 	font-family: "Microsoft YaHei";
 	margin: -8px 0px 3px 0px;
 }
-#menu .menu-list:hover{
 
+#menu .menu-list:hover{
 	background-color: #E5F3FF;
 	border:1px solid #CCE8FF;
+}
 
+#menu .menu-list:active{
+	opacity: 1;
+	background-color: #CCE8FF;
+	border:1px solid #99D1FF;
 }
 
 #info {

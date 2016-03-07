@@ -71,6 +71,11 @@ body {
 	background-color: #cacacb;
 }
 
+#icon #close-button:active {
+	opacity: 1.0;
+	background-color: #F1707A;
+}
+
 #icon .hiddenbutton {
 	display: none;
 	-webkit-app-region: drag;

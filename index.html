@@ -16,18 +16,16 @@
 			<img id="maximize-button" alt="maximize-button" class="button" src="icon/2.png">
 			<img id="close-button" alt="close-button" class="button" src="icon/3.png">
 			</span>
-			<div id="menu">
-				<div class="menu-list">文件(<ins>F</ins>)</div>
-				<div class="menu-list">编辑(<ins>E</ins>)</div>
-				<div class="menu-list">格式(<ins>O</ins>)</div>
-				<div class="menu-list">查看(<ins>V</ins>)</div>
-				<div class="menu-list">帮助(<ins>H</ins>)</div>
-			</div>
-			<div id="info1"><textarea id="info">LIKE A NOTEPAD!</textarea></div>
 		</div>
+			<div id="menu">
+				<div class="menu-list">文件(<ins class="skey">F</ins>)</div>
+				<div class="menu-list">编辑(<ins class="skey">E</ins>)</div>
+				<div class="menu-list">格式(<ins class="skey">O</ins>)</div>
+				<div class="menu-list">查看(<ins class="skey">V</ins>)</div>
+				<div class="menu-list">帮助(<ins class="skey">H</ins>)</div>
+			</div>
 	</div>
-	
-
+	<div id="info1"><textarea id="info">LIKE A NOTEPAD!</textarea></div>
 </div>
 <script type="text/javascript">
 	$("#close-button").mouseover(
@@ -36,8 +34,36 @@
 	$("#close-button").mouseout(
 		function(){$(this).attr("src","icon/3.png")}
 	);
+
+	$("#notepad").focus(
+		function(){
+			$(this).css("border","1px solid #1883D7");
+			$("#info").css("border","1px solid #0078D7");
+	});
+	$("#notepad").blur(
+		function(){
+			$(this).css("border","1px solid #3E3E3B");
+			$("#info").css("border","1px solid #3E3E3B");
+			$("#title,.menu-list").css("color","#999999");
+			$(".menu-list").css("color","#6D6D6D");
+			$(".menu-list").hover();
+			$("#notepad").mouseover(
+				function(){
+					$(this).css("border","1px solid #3E3F3C");
+					$("#info").css("border","1px solid #171717");
+				});
+			$("#notepad").mouseout(
+				function(){
+					$(this).css("border","1px solid #3E3E3B");
+					$("#info").css("border","1px solid #7A7A7A");
+				});
+	
+	});
+
+	$(".skey").css("textDecoration","none");
+	$("#info").height($("#notepad").height()-50-4);
 	$("#info").width($("#notepad").width()-4);
-	$("#info").height($("#notepad").height()-$("#logo").height()-$("#menu").height()-24);
+
 </script>
 </body>
 </html>
